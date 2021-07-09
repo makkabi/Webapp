@@ -2,7 +2,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = function (env, argv) {
   // Mode wird in dem Script in package.json gesetzt
-  const mode = argv?.mode;
+  const mode = argv && argv.mode;
 
   return {
     devtool: mode === 'production' ? 'source-map' : 'inline-source-map',

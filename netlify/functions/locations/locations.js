@@ -1,4 +1,4 @@
-import { getLocations } from './location-finder';
+const { getLocations } = require('./location-finder');
 
 exports.handler = async function (event, context) {
   const searchTerm = event.queryStringParameters.search;
